@@ -15,19 +15,19 @@ variable_name = value
 ### Example
 
 ```python
-name = "Shiva"
+name = "Nikhil"
 age = 21
-height = 5.8
+height = 5.0
 ```
 
 Here:
 
 * `name` is a variable.
-* `"Shiva"` is the value.
+* `"SNikhil"` is the value.
 * `age` is a variable.
 * `21` is the value.
 * `height` is a variable.
-* `5.8` is the value.
+* `5.0` is the value.
 
 ---
 
@@ -82,9 +82,9 @@ The name `age` refers to the integer object `21`.
 A variable is created when we assign a value to a name.
 
 ```python
-name = "Shiva"
+name = "Nikhil"
 age = 21
-city = "Ayodhya"
+city = "Maihar"
 ```
 
 There is no separate declaration required before creating a variable.
@@ -110,7 +110,7 @@ The `=` operator is called the **assignment operator**.
 It assigns a value to a variable.
 
 ```python
-name = "Shiva"
+name = "Nikhil"
 age = 21
 ```
 
@@ -123,13 +123,13 @@ x = 10 + 5
 Here:
 
 ```text
-10 + 5 → 15
+20 + 15 → 35
 ```
 
 So:
 
 ```text
-x → 15
+x → 35
 ```
 
 ---
@@ -248,10 +248,10 @@ There are two different things here:
 
 ```text
 name       → variable name
-"Shiva"  → value
+"Nikhil"  → value
 ```
 
-The variable `name` refers to the value `"Shiva"`.
+The variable `name` refers to the value `"Nikhil"`.
 
 ---
 
@@ -262,49 +262,49 @@ Python has some rules for naming variables.
 ### 1. Variable names can contain letters
 
 ```python
-name = "Shiva"
+name = "Nikhil"
 ```
 
 ### 2. Variable names can contain numbers
 
 ```python
-student1 = "Pandey"
+student1 = "Patel"
 ```
 
 But a variable name **cannot start with a number**.
 
 ```python
-1student = "Pandey"    # Invalid
+1student = "Patel"    # Invalid
 ```
 
 ### 3. Underscore is allowed
 
 ```python
-student_name = "Pandey"
+student_name = "Nikhil Patel"
 ```
 
 ### 4. Spaces are not allowed
 
 ```python
-student name = "Pandey"    # Invalid
+student name = "Nikhil Patel"    # Invalid
 ```
 
 Use an underscore instead:
 
 ```python
-student_name = "Pandey"
+student_name = "Nikhil Patel"
 ```
 
 ### 5. Hyphen is not allowed
 
 ```python
-student-name = "Pandey"    # Invalid
+student-name = "Nikhil Patel"   Invalid
 ```
 
 Use:
 
 ```python
-student_name = "Pandey"
+student_name = "Nikhil Patel"
 ```
 
 ### 6. Variable names are case-sensitive
@@ -312,9 +312,9 @@ student_name = "Pandey"
 These are different variables:
 
 ```python
-name = "Pandey"
-Name = "Shiva"
-NAME = "Pandey"
+name = "Nikhil Patel"
+Name = "Patel"
+NAME = "Nikhil Patel"
 ```
 
 Python treats:
@@ -342,13 +342,13 @@ class = "Python"    # Invalid
 # Valid Variable Names
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 age = 21
-student_name = "Pandey"
-student1 = "Pandey"
-_marks = 95
-total_marks = 450
-mobile_number = 9876543210
+student_name = "Nikhil Patel 2"
+student1 = "Nikhil Patel 3"
+_marks = 83
+total_marks = 332
+mobile_number = 910*******
 ```
 
 ---
@@ -356,9 +356,9 @@ mobile_number = 9876543210
 # Invalid Variable Names
 
 ```python
-1name = "Shiva"        # Cannot start with a number
-student-name = "Pandey"    # Hyphen is not allowed
-student name = "Pandey"    # Space is not allowed
+1name = "Nikhil Patel"        # Cannot start with a number
+student-name = "Abhi"    # Hyphen is not allowed
+student name = "Ankit"    # Space is not allowed
 class = "Python"        # Keyword cannot be used
 ```
 
@@ -371,19 +371,17 @@ Variable names should clearly tell us what the value represents.
 ### Good
 
 ```python
-student_name = "Shiva"
-total_marks = 450
-mobile_number = 9876543210
-employee_salary = 50000
+student_name = "Nikhil Patel"
+total_marks = 332
+mobile_number = 910*******
 ```
 
 ### Not Good
 
 ```python
-x = "Shiva"
-a = 450
-m = 9876543210
-s = 50000
+x = "Nikhil Patel"
+a = 332
+m = 910******
 ```
 
 Meaningful names make code easier to understand.
@@ -399,7 +397,7 @@ In snake_case, words are written in lowercase and separated using underscores.
 ### Examples
 
 ```python
-student_name
+employee_name
 total_marks
 mobile_number
 date_of_birth
@@ -426,7 +424,7 @@ student_name
 A variable can hold different kinds of values.
 
 ```python
-name = "Shiva"
+name = "employee"
 age = 21
 height = 5.8
 is_student = True
@@ -441,7 +439,7 @@ The detailed study of these value types is covered separately in the **Data Type
 We can use the `print()` function to display the value of a variable.
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 age = 21
 
 print(name)
@@ -451,7 +449,7 @@ print(age)
 Output:
 
 ```text
-Shiva
+Nikhil Patel
 21
 ```
 
@@ -462,7 +460,8 @@ Shiva
 We can pass multiple values to `print()`.
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
+name = ""
 age = 21
 
 print("Name:", name)
@@ -472,7 +471,7 @@ print("Age:", age)
 Output:
 
 ```text
-Name: Shiva
+Name: Nikhil Patel
 Age: 21
 ```
 
@@ -500,7 +499,7 @@ Output:
 Another example:
 
 ```python
-price = 100
+price = 60
 quantity = 3
 
 total = price * quantity
@@ -511,7 +510,7 @@ print(total)
 Output:
 
 ```text
-300
+180
 ```
 
 ---
@@ -546,15 +545,15 @@ result → 30
 Python allows us to assign values to multiple variables in one line.
 
 ```python
-name, age, city = "Shiva", 21, "Ayodhya"
+name, age, city = "Nikhil Patel", 21, "Maihar"
 ```
 
 This is similar to:
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 age = 21
-city = "Ayodhya"
+city = "Maihar"
 ```
 
 ---
@@ -906,7 +905,7 @@ This gives a `NameError`.
 ### Example
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 
 del name
 
@@ -932,7 +931,7 @@ Inside a normal program, we usually avoid checking this by designing the code pr
 For global names, `globals()` can be used in some situations:
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 
 print("name" in globals())
 ```
@@ -985,7 +984,7 @@ A variable created inside a function is normally a local variable.
 
 ```python
 def show_name():
-    name = "Shiva"
+    name = "Nikhil Patel"
     print(name)
 ```
 
@@ -996,7 +995,7 @@ Here, `name` is local to the function.
 A variable created outside functions is normally a global variable.
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 
 def show_name():
     print(name)
@@ -1017,14 +1016,14 @@ A **variable** and a **function** are different things.
 A variable is a name that refers to a value/object.
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 age = 21
 ```
 
 Here:
 
 ```text
-name → "Shiva"
+name → "Nikhil Patel"
 age  → 21
 ```
 
@@ -1063,7 +1062,7 @@ Hello
 ### Example Together
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 
 def greet():
     print("Hello", name)
@@ -1085,7 +1084,7 @@ Here:
 ## 1. Starting a Variable Name with a Number
 
 ```python
-1name = "Shiva"
+1name = "Nikhil Patel"
 ```
 
 This is invalid.
@@ -1093,7 +1092,7 @@ This is invalid.
 Correct:
 
 ```python
-name1 = "Shiva"
+name1 = "Nikhil Patel"
 ```
 
 ---
@@ -1101,7 +1100,7 @@ name1 = "Shiva"
 ## 2. Using Spaces
 
 ```python
-student name = "Shiva"
+student name = "Nikhil Patel"
 ```
 
 This is invalid.
@@ -1109,7 +1108,7 @@ This is invalid.
 Correct:
 
 ```python
-student_name = "Shiva"
+student_name = "Nikhil Patel"
 ```
 
 ---
@@ -1135,7 +1134,7 @@ If `name` has not been created before, Python gives a `NameError`.
 Correct:
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 print(name)
 ```
 
@@ -1186,19 +1185,20 @@ True
 ### Good Examples
 
 ```python
-student_name = "Shiva"
-total_marks = 450
-mobile_number = 9876543210
+employee_name = "Nikhil Patel"
+total_marks = 332
+mobile_number = 910*******
 employee_salary = 50000
-date_of_birth = "01-01-2000"
+date_of_birth = "22-01-2005"
+company = "ABC"
 ```
 
 ### Avoid
 
 ```python
-a = "Shiva"
-x = 450
-abc = 9876543210
+a = "Nikhil Patel"
+x = 332
+m = 910*******
 temp1 = 50000
 ```
 
@@ -1211,15 +1211,15 @@ These names do not clearly explain what the values represent.
 ### Basic Variable
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 ```
 
 ### Multiple Variables
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 age = 21
-city = "Ayodhya"
+city = "Maihar"
 ```
 
 ### Multiple Assignment
@@ -1278,7 +1278,7 @@ print(id(value))
 ### Deleting a Variable
 
 ```python
-name = "Shiva"
+name = "Nikhil Patel"
 
 del name
 ```
