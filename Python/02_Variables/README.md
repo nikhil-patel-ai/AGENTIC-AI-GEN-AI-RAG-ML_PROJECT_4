@@ -241,7 +241,7 @@ The variable name is the same, but the value it refers to has changed.
 Consider:
 
 ```python
-name = "Shiva"
+name = "Nikhil"
 ```
 
 There are two different things here:
