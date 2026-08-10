@@ -357,7 +357,7 @@ python hello.py
 
 # `.ipynb` File
 
-`.ipynb` stands for **IPython Notebook**.
+`.ipynb` stands for **Interactive Python Notebook**.
 
 It is mainly used with **Jupyter Notebook** and **JupyterLab**.
 
