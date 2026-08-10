@@ -23,7 +23,7 @@ height = 5.0
 Here:
 
 * `name` is a variable.
-* `"SNikhil"` is the value.
+* `"Nikhil"` is the value.
 * `age` is a variable.
 * `21` is the value.
 * `height` is a variable.
