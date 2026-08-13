@@ -380,7 +380,7 @@ print(name)
 Output:
 
 ```text
-Zeeshan
+Nikhil
 ```
 
 An `.ipynb` file can contain:
@@ -1335,13 +1335,13 @@ Data Science Practice
 ## 1. Print Your Name
 
 ```python
-print("Zeeshan Jamshed")
+print("Nikhil Patel")
 ```
 
 ## 2. Print Your College
 
 ```python
-print("Integral University")
+print("AKS University")
 ```
 
 ## 3. Print Your Course
