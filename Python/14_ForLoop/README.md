@@ -1,10 +1,11 @@
-# Python `for` Loops
+# Python `for` and `while` Loops
 
-A `for` loop repeats a block of code once for each item in an iterable, such as a range, list, string, tuple, or dictionary. It is a clear choice when the values to process are already available or the number of repetitions is known.
+Loops repeat a block of code. A `for` loop processes each item in an iterable, while a `while` loop repeats code as long as a condition remains true.
 
 This lesson introduces:
 
 - `for` loops with `range()`
+- `while` loops with counters and conditions
 - Start, stop, and step values
 - Conditions inside loops
 - `break`, `continue`, and `pass`
@@ -16,10 +17,12 @@ This lesson introduces:
 By the end of this lesson, you should be able to:
 
 - Iterate through a sequence with a `for` loop.
+- Repeat code with a `while` loop.
 - Generate numeric sequences with `range()`.
 - Filter values using conditions inside a loop.
 - Control loop execution with `break`, `continue`, and `pass`.
 - Build simple patterns with nested loops.
+- Avoid infinite loops by updating a `while` loop's condition.
 
 ## Prerequisites
 
@@ -158,6 +161,56 @@ for number in range(1, 5):
 
 Unlike `continue`, `pass` does not skip to the next iteration by itself; it simply performs no operation for that statement.
 
+## Basic `while` Loop
+
+A `while` loop runs its indented block as long as its condition is true. A counter-based loop should initialize the counter, test the condition, and update the counter.
+
+```python
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+The counter update is essential. Without it, the condition may never become false and the loop can run forever.
+
+## Counting Backward with `while`
+
+The counter can decrease when a task needs a countdown:
+
+```python
+count = 5
+
+while count >= 1:
+    print(count)
+    count -= 1
+```
+
+## `while` with User Input
+
+Use a `while` loop when the number of repetitions depends on a condition that changes during execution.
+
+```python
+command = ""
+
+while command != "quit":
+    command = input("Enter a command: ")
+    print("You entered:", command)
+```
+
+The loop stops when the user enters `quit`.
+
 ## Nested `for` Loops
 
 A nested loop is a loop inside another loop. The inner loop completes for each iteration of the outer loop.
@@ -198,6 +251,16 @@ for number in range(1, 6):
     print(number)
 ```
 
+```python
+number = 1
+
+while number <= 5:
+    print(number)
+    number += 1
+```
+
+Choose `for` when iterating over a sequence or known range. Choose `while` when repetition depends on a condition that changes during execution.
+
 ## Best Practices
 
 - Use descriptive names such as `number`, `row`, and `column`.
@@ -207,6 +270,7 @@ for number in range(1, 6):
 - Use `break` and `continue` when they make the control flow clearer.
 - Avoid changing the loop variable unnecessarily inside the loop.
 - Prefer a single loop over nested loops when the task does not require multiple dimensions.
+- Update the condition or counter in every `while` loop.
 
 ## Practice Exercises
 
@@ -216,3 +280,5 @@ for number in range(1, 6):
 4. Use `continue` to skip all even numbers from 1 to 20.
 5. Search a list for a target value and stop with `break` when it is found.
 6. Print a right-aligned or inverted triangle using nested loops.
+7. Print a countdown from 10 to 1 using a `while` loop.
+8. Keep asking for input until the user enters `quit`.
